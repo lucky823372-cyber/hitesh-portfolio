@@ -240,3 +240,105 @@
   <footer>My Portfolio | Built with HTML and CSS</footer>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hitesh Saini | Web Developer</title>
+<style>
+:root{--bg:#080d16;--card:#101a29;--cyan:#22d3ee;--text:#f1f5f9;--muted:#a6b4c7}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:inherit;text-decoration:none}
+.container{width:min(1080px,90%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#080d16f2;border-bottom:1px solid #203044}
+nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{color:var(--cyan);font-size:1.4rem;font-weight:bold}
+.links{display:flex;flex-wrap:wrap;gap:18px}
+.links a:hover{color:var(--cyan)}
+.hero{min-height:78vh;display:flex;align-items:center;padding:65px 0}
+.hero-inner{display:flex;align-items:center;justify-content:space-between;gap:40px}
+.intro{flex:1}
+.eyebrow{color:var(--cyan);letter-spacing:2px;text-transform:uppercase;font-weight:bold}
+h1{font-size:clamp(2.5rem,6vw,4.5rem);line-height:1.15;margin:14px 0}
+h1 span,h2 span{color:var(--cyan)}
+p{color:var(--muted)}
+.buttons{display:flex;flex-wrap:wrap;gap:14px;margin-top:25px}
+.btn{display:inline-block;padding:11px 19px;border:1px solid var(--cyan);border-radius:8px;font-weight:bold}
+.primary{background:var(--cyan);color:#06111a}
+.btn:hover{transform:translateY(-2px)}
+.photo{width:240px;height:240px;flex-shrink:0;padding:7px;border:3px solid var(--cyan);border-radius:50%;box-shadow:0 0 32px #22d3ee30}
+.photo img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+section{padding:70px 0;scroll-margin-top:75px}
+h2{font-size:2.2rem;margin-bottom:15px}
+.desc{margin-bottom:25px;max-width:650px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.card{background:var(--card);border:1px solid #22354a;border-radius:14px;padding:24px}
+.card h3{color:var(--cyan);margin-bottom:10px}
+.card:hover{border-color:var(--cyan);transform:translateY(-4px)}
+.skills{display:flex;flex-wrap:wrap;gap:12px}
+.skill{padding:8px 15px;border:1px solid #245063;background:#10212d;color:var(--cyan);border-radius:25px}
+.contact{background:var(--card);padding:25px;border:1px solid #22354a;border-radius:14px}
+.contact p{margin:12px 0}
+footer{text-align:center;padding:24px;border-top:1px solid #203044}
+@media(max-width:700px){nav{align-items:flex-start;flex-direction:column;padding:14px 0}.links{gap:12px;font-size:.9rem}.hero-inner{flex-direction:column-reverse;text-align:center}.buttons{justify-content:center}.photo{width:185px;height:185px}.cards{grid-template-columns:1fr}section{padding:50px 0}}
+</style>
+</head>
+<body>
+<header>
+<nav class="container">
+<a class="logo" href="#home">Hitesh.dev</a>
+<div class="links">
+<a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+</div>
+</nav>
+</header>
+<main>
+<section class="hero" id="home">
+<div class="container hero-inner">
+<div class="intro">
+<p class="eyebrow">Welcome to my portfolio</p>
+<h1>Hi, I'm <span>Hitesh Saini</span></h1>
+<h2>Web Developer</h2>
+<p>I am learning web development and building websites with HTML and CSS. I enjoy learning new skills and turning ideas into real projects.</p>
+<div class="buttons"><a class="btn primary" href="#projects">View My Projects</a><a class="btn" href="#contact">Contact Me</a></div>
+</div>
+<div class="photo"><img src="hitesh.png.jpg.jpg" alt="Hitesh Saini"></div>
+</div>
+</section>
+<section id="about">
+<div class="container">
+<h2>About <span>Me</span></h2>
+<p class="desc">I am developing my web development skills by creating websites, practising coding and learning something new every day.</p>
+</div>
+</section>
+<section id="skills">
+<div class="container">
+<h2>My <span>Skills</span></h2>
+<p class="desc">Technologies I am learning and practising.</p>
+<div class="skills"><span class="skill">HTML5</span><span class="skill">CSS3</span><span class="skill">Responsive Design</span><span class="skill">GitHub</span><span class="skill">JavaScript (Learning)</span></div>
+</div>
+</section>
+<section id="projects">
+<div class="container">
+<h2>My <span>Projects</span></h2>
+<p class="desc">Projects I am building as I learn.</p>
+<div class="cards">
+<article class="card"><h3>Personal Portfolio</h3><p>A website to introduce myself and share my work.</p></article>
+<article class="card"><h3>Responsive Website</h3><p>A practice project focused on layouts for laptop and mobile.</p></article>
+<article class="card"><h3>More Coming Soon</h3><p>I am learning new skills and will add more projects here.</p></article>
+</div>
+</div>
+</section>
+<section id="contact">
+<div class="container">
+<h2>Contact <span>Me</span></h2>
+<div class="contact"><p>Interested in connecting? Send me an email.</p><a class="btn primary" href="mailto:hiteshsaini1020@gmail.com">Email Me</a><p>Email: hiteshsaini1020@gmail.com</p></div>
+</div>
+</section>
+</main>
+<footer><div class="container">© 2026 Hitesh Saini | Built with HTML &amp; CSS</div></footer>
+</body>
+</html>
