@@ -638,7 +638,57 @@ section {
     width: 100%;
   }
 }
-   
+ 
+/* Clean footer design */
+footer {
+  padding: 24px 16px;
+  text-align: center;
+  border-top: 1px solid rgba(0, 220, 255, 0.18);
+  background: rgba(7, 17, 31, 0.85);
+  color: #b8c9d9;
+}
+
+footer a {
+  color: #00dcff;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+/* Better mobile navigation */
+@media (max-width: 700px) {
+  header nav {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .hero {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+  
   </style>
 </head>
 
