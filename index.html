@@ -592,6 +592,52 @@ section {
     gap: 14px;
   }
 }
+
+/* Professional contact section */
+#contact {
+  position: relative;
+}
+
+#contact .section-title span {
+  color: #00dcff;
+}
+
+#contact a {
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+#contact a:hover {
+  color: #00dcff;
+}
+
+#contact .card {
+  padding: 28px;
+  border: 1px solid rgba(0, 220, 255, 0.22);
+  border-radius: 18px;
+  background: linear-gradient(
+    145deg,
+    rgba(15, 32, 52, 0.95),
+    rgba(7, 17, 31, 0.96)
+  );
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+#contact .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+@media (max-width: 700px) {
+  #contact .card {
+    padding: 22px;
+  }
+
+  #contact .btn {
+    width: 100%;
+  }
+}
    
   </style>
 </head>
