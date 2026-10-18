@@ -834,7 +834,63 @@ footer a:hover {
     min-height: auto;
   }
 }
-  
+
+#skills .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+#skills .skill-card {
+  padding: 28px 22px;
+  text-align: center;
+  border: 1px solid rgba(0, 220, 255, 0.35);
+  border-radius: 18px;
+  background: linear-gradient(145deg, #0f2034, #07111f);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#skills .skill-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 30px rgba(0, 220, 255, 0.18);
+}
+
+#skills .skill-icon {
+  font-size: 32px;
+  margin-bottom: 14px;
+}
+
+#skills .skill-card h3 {
+  color: #effcff;
+  margin-bottom: 10px;
+}
+
+#skills .skill-card p {
+  color: #b8c9d9;
+  line-height: 1.7;
+}
+
+#skills .skill-label {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  color: #83efff;
+  background: rgba(0, 220, 255, 0.08);
+}
+
+@media (max-width: 800px) {
+  #skills .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  #skills .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
   </style>
 </head>
 
