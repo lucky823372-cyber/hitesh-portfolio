@@ -688,6 +688,42 @@ footer a:hover {
     gap: 12px;
   }
 }
+
+.hero-description {
+  max-width: 620px;
+  margin: 22px auto;
+  color: #b8c9d9;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+}
+
+.hero-content h1 {
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.hero-content h1 span {
+  color: #00dcff;
+  text-shadow: 0 0 22px rgba(0, 220, 255, 0.22);
+}
+
+.hero-content .buttons {
+  justify-content: center;
+  margin-top: 26px;
+}
+
+@media (max-width: 700px) {
+  .hero-description {
+    font-size: 15px;
+    padding: 0 8px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(30px, 8vw, 42px);
+    letter-spacing: -0.5px;
+  }
+}
   
   </style>
 </head>
@@ -707,22 +743,49 @@ footer a:hover {
   </header>
 
  
+
 <section class="hero" id="home">
   <div class="hero-photo">
-    <img src="hitesh.png.jpg.jpg" alt="Hitesh Saini" class="profile-photo">
+    <img
+      src="hitesh.png.jpg.jpg"
+      alt="Hitesh Saini"
+      class="profile-photo"
+    >
   </div>
 
   <div class="container hero-content">
     <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
-<div class="hero-badge">
-  <span class="status-dot"></span>
-  Aspiring Web Developer
-</div>
+
+    <div class="hero-badge">
+      <span class="status-dot"></span>
+      Aspiring Web Developer
+    </div>
+
     <h1>
       Hi, I'm Hitesh Saini.
       <br>
       <span>Web Developer</span>
     </h1>
+
+    <p class="hero-description">
+      I am passionate about web development and creating
+      modern, responsive and user-friendly websites.
+      I am continuously learning and building new projects
+      to improve my skills.
+    </p>
+
+    <div class="buttons">
+      <a href="#projects" class="btn btn-primary">
+        Explore My Work ↗
+      </a>
+
+      <a href="#contact" class="btn">
+        Contact Me
+      </a>
+    </div>
+  </div>
+</section>
+
 
     <p>
       I'm learning web development and creating modern, responsive websites.
