@@ -891,6 +891,110 @@ footer a:hover {
   }
 }
 
+/* ===== PREMIUM PROJECTS SECTION ===== */
+
+#projects {
+  padding: 90px 20px;
+}
+
+#projects .section-intro {
+  max-width: 620px;
+  margin: 16px auto 42px;
+  text-align: center;
+  line-height: 1.8;
+  color: #b8c9d9;
+}
+
+#projects .grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#projects .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 28px;
+  border: 1px solid rgba(0, 220, 255, 0.22);
+  border-radius: 20px;
+  background: linear-gradient(145deg, #0f2034, #07111f);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  transition: transform 0.3s ease,
+              border-color 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+#projects .card:hover {
+  transform: translateY(-8px);
+  border-color: #00dcff;
+  box-shadow: 0 18px 40px rgba(0, 220, 255, 0.12);
+}
+
+#projects .card .eyebrow {
+  color: #00dcff;
+  font-size: 11px;
+  letter-spacing: 1px;
+  line-height: 1.7;
+}
+
+#projects .card h3 {
+  margin: 12px 0;
+  color: #effcff;
+  font-size: 21px;
+  line-height: 1.45;
+}
+
+#projects .card > p:not(.eyebrow) {
+  color: #b8c9d9;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+#projects .project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: auto;
+  padding-top: 22px;
+}
+
+#projects .project-links a {
+  color: #00dcff;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+#projects .project-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+@media (max-width: 850px) {
+  #projects .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  #projects {
+    padding: 65px 16px;
+  }
+
+  #projects .grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  #projects .card {
+    padding: 24px;
+  }
+}
+
   </style>
 </head>
 
