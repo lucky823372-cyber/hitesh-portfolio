@@ -1154,8 +1154,7 @@ header nav {
   }
 }
 
-/* PREMIUM BUTTON DESIGN */
-
+/* PREMIUM BUTTON DESIGN    
 .btn {
   display: inline-flex;
   align-items: center;
@@ -1631,6 +1630,42 @@ footer a:hover {
   }
 }
 
+/* ===== BACK TO TOP BUTTON ===== */
+#backToTop {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 999;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #00dcff;
+  border-radius: 15px;
+  background: #0d2238;
+  color: #00dcff;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 5px 20px rgba(0, 220, 255, 0.15);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+#backToTop:hover {
+  transform: translateY(-5px);
+  background: #00dcff;
+  color: #07111f;
+}
+
+@media (max-width: 600px) {
+  #backToTop {
+    right: 16px;
+    bottom: 16px;
+    width: 44px;
+    height: 44px;
+  }
+}
+
   </style>
 </head>
 
@@ -1936,5 +1971,8 @@ footer a:hover {
       <p>© 2026 Hitesh Saini · Built with HTML & CSS</p>
     </div>
   </footer>
+  
+<a href="#home" id="backToTop" aria-label="Back to top" title="Back to top">↑</a>
+
 </body>
 </html>
