@@ -1115,6 +1115,45 @@ html {
   }
 }
 
+/* PROFESSIONAL NAVIGATION */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(7, 17, 31, 0.92);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(0, 220, 255, 0.16);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #d9e8f5;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: #00dcff;
+}
+
+@media (max-width: 600px) {
+  header nav {
+    justify-content: center;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 14px;
+  }
+}
+
   </style>
 </head>
 
