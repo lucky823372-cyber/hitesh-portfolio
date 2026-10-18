@@ -1075,6 +1075,46 @@ footer a:hover {
   }
 }
 
+/* PROFESSIONAL WEBSITE EFFECTS */
+
+html {
+  scroll-behavior: smooth;
+}
+
+#projects .card,
+#skills .skill-card,
+#contact .contact-card {
+  transition: transform 0.3s ease,
+              border-color 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+#projects .card:hover,
+#skills .skill-card:hover {
+  transform: translateY(-6px);
+  border-color: #00dcff;
+  box-shadow: 0 12px 30px rgba(0, 220, 255, 0.15);
+}
+
+.btn {
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 220, 255, 0.2);
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+}
+
   </style>
 </head>
 
