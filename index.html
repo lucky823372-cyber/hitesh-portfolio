@@ -1397,6 +1397,116 @@ footer a:hover {
   }
 }
 
+/* ===== PREMIUM CONTACT SECTION ===== */
+
+#contact {
+  position: relative;
+  padding: 100px 20px;
+  overflow: hidden;
+}
+
+#contact .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#contact .section-title {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+#contact .eyebrow {
+  text-align: center;
+  color: #00dcff;
+  letter-spacing: 2px;
+}
+
+#contact .contact-card {
+  position: relative;
+  max-width: 720px;
+  margin: 30px auto 0;
+  padding: 42px 35px;
+  text-align: center;
+  border: 1px solid rgba(0, 220, 255, 0.35);
+  border-radius: 24px;
+  background: linear-gradient(
+    145deg,
+    rgba(19, 38, 61, 0.96),
+    rgba(7, 17, 31, 0.98)
+  );
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+#contact .contact-card:hover {
+  transform: translateY(-5px);
+  border-color: #00dcff;
+  box-shadow: 0 18px 45px rgba(0, 220, 255, 0.13);
+}
+
+#contact .contact-card > p {
+  max-width: 520px;
+  margin: 0 auto 28px;
+  color: #c3d3e2;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+#contact .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+#contact .buttons .btn {
+  min-width: 145px;
+  padding: 14px 24px;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+#contact .buttons .btn-primary {
+  background: #00dcff;
+  color: #07111f;
+  border-color: #00dcff;
+}
+
+#contact .buttons .btn-primary:hover {
+  background: #8af1ff;
+  box-shadow: 0 8px 25px rgba(0, 220, 255, 0.25);
+}
+
+#contact .buttons .btn:not(.btn-primary):hover {
+  border-color: #00dcff;
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  #contact {
+    padding: 65px 16px;
+  }
+
+  #contact .contact-card {
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+
+  #contact .contact-card > p {
+    font-size: 14px;
+  }
+
+  #contact .buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  #contact .buttons .btn {
+    width: 100%;
+  }
+}
+
   </style>
 </head>
 
