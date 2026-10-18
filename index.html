@@ -1685,6 +1685,68 @@ footer a:hover {
   transform: scale(1.02);
 }
 
+/* Professional Projects Cards */
+#projects .grid {
+  align-items: stretch;
+  gap: 24px;
+}
+
+#projects .card {
+  box-sizing: border-box;
+  min-width: 0;
+  overflow: hidden;
+  padding: 26px;
+  border: 1px solid rgba(0, 220, 255, 0.25);
+  border-radius: 20px;
+  background: linear-gradient(145deg, #12263d, #07111f);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+  transition: transform 0.25s ease, border-color 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+#projects .card:hover {
+  transform: translateY(-5px);
+  border-color: #00dcff;
+  box-shadow: 0 14px 32px rgba(0, 220, 255, 0.12);
+}
+
+#projects .card h3 {
+  color: #effcff;
+  line-height: 1.45;
+  margin: 12px 0;
+}
+
+#projects .card > p:not(.eyebrow) {
+  color: #b8c9d9;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+#projects .project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+#projects .project-links a {
+  color: #00dcff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#projects .project-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  #projects .card {
+    padding: 22px;
+  }
+}
+
   </style>
 </head>
 
