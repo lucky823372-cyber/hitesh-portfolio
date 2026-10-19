@@ -1864,6 +1864,77 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Professional Skills Section */
+#skills .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 32px;
+}
+
+#skills .skill-card {
+  background: linear-gradient(145deg, #101724, #0b1220);
+  border: 1px solid rgba(0, 229, 255, 0.22);
+  border-radius: 18px;
+  padding: 28px 20px;
+  text-align: center;
+  transition: transform 0.3s ease,
+    border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#skills .skill-card:hover {
+  transform: translateY(-7px);
+  border-color: #00e5ff;
+  box-shadow: 0 12px 30px rgba(0, 229, 255, 0.12);
+}
+
+#skills .skill-icon {
+  font-size: 38px;
+  margin-bottom: 14px;
+}
+
+#skills .skill-card h3 {
+  color: #f4f7fb;
+  margin: 8px 0;
+}
+
+#skills .skill-card p {
+  color: #a7b2c4;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+#skills .skill-label {
+  display: inline-block;
+  color: #00e5ff;
+  background: rgba(0, 229, 255, 0.08);
+  border: 1px solid rgba(0, 229, 255, 0.25);
+  border-radius: 30px;
+  padding: 6px 13px;
+  font-size: 12px;
+}
+
+@media (max-width: 700px) {
+  #skills .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  #skills .skill-card {
+    padding: 22px 12px;
+  }
+
+  #skills .skill-icon {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 380px) {
+  #skills .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
   </style>
   <link rel="icon" href="https://placehold.co/64x64/080b12/00e5ff.png?text=H">
 </head>
