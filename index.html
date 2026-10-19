@@ -1935,6 +1935,66 @@ html {
   }
 }
 
+/* Premium Hero Section */
+#home {
+  position: relative;
+  overflow: hidden;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background:
+    radial-gradient(ellipse at 80% 20%, rgba(0, 229, 255, 0.13), transparent 45%),
+    linear-gradient(135deg, #080b12, #0b1422 60%, #080b12);
+}
+
+#home h1 {
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+
+#home h1 span {
+  color: #00e5ff;
+  text-shadow: 0 0 22px rgba(0, 229, 255, 0.22);
+}
+
+#home p {
+  line-height: 1.8;
+}
+
+#home a {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#home a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(0, 229, 255, 0.18);
+}
+
+#home .profile-photo {
+  width: 300px;
+  height: 300px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #00e5ff;
+  box-shadow: 0 0 28px rgba(0, 229, 255, 0.2);
+}
+
+@media (max-width: 700px) {
+  #home {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  #home h1 {
+    letter-spacing: -0.5px;
+  }
+
+  #home .profile-photo {
+    width: 240px;
+    height: 240px;
+  }
+}
+
   </style>
   <link rel="icon" href="https://placehold.co/64x64/080b12/00e5ff.png?text=H">
 </head>
