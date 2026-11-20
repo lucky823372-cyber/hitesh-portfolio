@@ -1689,8 +1689,11 @@ footer a:hover {
 
 /* Professional Projects Cards */
 #projects .grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 240px));
   align-items: stretch;
-  gap: 24px;
+  justify-content: center;
+  gap: 16px;
 }
 
 #projects .card {
